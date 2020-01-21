@@ -9,5 +9,5 @@ The exsisting folder is not recognised as module for import.
 <em>Solution:</em>
 
 `import sys`                                          #for path to external scripts<br />
-`sys.path.insert(0, '/home/JackGrimm/mysite')`        #path to my scripts<br />
+`sys.path.insert(0, '/my/program/path')`        #path to my scripts<br />
 `from mypackage.module import foo`                     #importing scripts and giving a local name<br />
