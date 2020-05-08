@@ -25,3 +25,10 @@ rather than
 $ git remote add origin https://github.com/username/new_repo
 ```
 The former is for use with ssh (ssh setup) and you won’t have to type your password every time you push things to github. If you use the latter construction, you’ll have to type your github password every time you push to github.
+
+##2. Detached Head:
+Use
+```
+git checkout master
+git checkout detached-branch-name
+```
