@@ -18,10 +18,10 @@ from mypackage.module import foo                  #importing scripts and giving 
 When we want to viusalize from a remote serverm follow these steps:
 
 Start SSH with transfer the remote server’s port to your local PC. After that, start the tensorboard on the remote server with the specific port we want to transfer.
-
-(on your local PC) `ssh -L 16007:127.0.0.1:16007 username@server_ip`
-(on the remote server) `tensorboard --logdir='./tensorboard_dirs' --port=16007`
-
+```
+$ ssh -L 16007:127.0.0.1:16007 username@server_ip #local workstation
+$ tensorboard --logdir='my-logs-folder' --port=16007 #remote server
+```
 ## Git
 ### 1. git push (ssh way):
 Use 
@@ -38,6 +38,6 @@ The former is for use with ssh (ssh setup) and you won’t have to type your pas
 ##2. Detached Head:
 Use
 ```
-git checkout master
-git checkout detached-branch-name
+$ git checkout master
+$ git checkout detached-branch-name
 ```
